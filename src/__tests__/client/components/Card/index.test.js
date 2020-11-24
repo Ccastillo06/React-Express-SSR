@@ -10,7 +10,7 @@ const mockStore = configureStore([]);
 
 describe('Component Card renders as expected', () => {
   let store;
-  let context = {};
+  const context = {};
   let component;
 
   beforeEach(() => {

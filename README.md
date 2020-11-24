@@ -6,6 +6,8 @@ This project renders React pages and components directly from the Server so it i
 
 - React & Redux
 - Node & Express
+- SCSS
+- Jest & react-test-renderer
 
 ## How to use 🛠
 
