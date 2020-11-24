@@ -19,6 +19,8 @@ All changes made into any part of the code will trigger a webpack watcher so aft
 
 This project can be deployed in a server instance. You can check out how it's using **Redux**, **SCSS** and some modern features applied through **Babel** plugins. It's consuming **Rick and Morty** API to show characters in a simple way so you can check how pagination, filtering and server load through params work 😎.
 
+**You can check it out in [Heroku](https://react-express-ssr.herokuapp.com/)**
+
 ## Future improvements:
 
 - Add **Hot Reloading** for the client side code so development experience is improved. I tried to add it but due to the server listening to changes through `nodemon` when developing the debugging was getting too long and confusing. Will try again in the future. 🔮
