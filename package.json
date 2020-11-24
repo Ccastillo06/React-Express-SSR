@@ -5,16 +5,18 @@
   "main": "dist/server.js",
   "scripts": {
     "clean": "rm -rf dist",
+    "start": "node dist/server.js",
+    "test": "jest",
+    "heroku-postbuild": "npm run build",
     "build-client": "webpack --mode production --config webpack.client.js",
     "build-server": "webpack --mode production --config webpack.server.js",
     "build": "npm run build-client && npm run build-server",
-    "start": "npm run clean && npm run build && node dist/server.js",
+    "serve": "npm run clean && npm run build && npm run start",
     "dev": "npm run clean && npm run dev:build && npm-run-all --parallel dev:*",
     "dev:build": "webpack --config webpack.server.js && webpack --config webpack.client.js",
     "dev:build-server": "webpack --config webpack.server.js --watch",
     "dev:build-client": "webpack --config webpack.client.js --watch",
-    "dev:server": "nodemon --watch dist --exec node dist/server.js",
-    "test": "jest"
+    "dev:server": "nodemon --watch dist --exec node dist/server.js"
   },
   "keywords": [],
   "author": "",
