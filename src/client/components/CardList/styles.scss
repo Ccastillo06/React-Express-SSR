@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+.CardList {
+  &__container {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+
+    @extend .flex-row-center;
+  }
+
+  &__load {
+    &-button {
+      padding: 0.5rem 1rem;
+      border: 0;
+      border-radius: 0.25rem;
+
+      color: rgb(41, 40, 40);
+      background-color: #FF9B71;
+
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        background-color: #e09372;
+      }
+    }
+  }
+}

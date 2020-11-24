@@ -1,0 +1,15 @@
+@import './index.scss';
+
+.App {
+  text-align: center;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  > div {
+    flex: 1;
+  }
+}

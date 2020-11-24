@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+.Footer {
+  &__container {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: black;
+  }
+
+  &__link {
+    color: white;
+  }
+}

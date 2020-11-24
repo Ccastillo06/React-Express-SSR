@@ -1,0 +1,74 @@
+.CharacterFilter {
+  &__container {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  &__form {
+    padding: 1rem;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    > select,
+    > input {
+      padding: 0.25rem;
+      box-sizing: border-box;
+      font-size: 1rem;
+      border: 1px solid #2d3047;
+      border-radius: 0.25rem;
+
+      width: 100%;
+      max-width: 300px;
+      transition: border 200ms ease-in-out;
+
+      &:hover {
+        border-color: #1b998b;
+      }
+    }
+
+    > * {
+      margin: 0 0.25rem 0.5rem 0.25rem;
+    }
+  }
+
+  &__submit {
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 0.25rem;
+
+    color: white;
+    background-color: #1b998b;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: #3eaa9d;
+    }
+
+    &:disabled {
+      filter: grayscale(100%);
+      cursor: not-allowed;
+    }
+  }
+
+  &__cancel {
+    @extend .CharacterFilter__submit;
+
+    background-color: #e84855;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: #e45c67;
+    }
+  }
+}

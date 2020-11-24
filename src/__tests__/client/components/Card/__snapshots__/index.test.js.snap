@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Card renders as expected should render with given state from Redux store 1`] = `
+<div
+  className="Card__container "
+>
+  <div
+    className="header flex-center mb-1"
+  >
+    <h2
+      className="Card__title ellipsis"
+    >
+      Saitama
+    </h2>
+    <h3
+      className="regular capitalize"
+    >
+      Alive
+    </h3>
+  </div>
+  <img
+    alt="Saitama"
+    className="Card__picture mb-1"
+    src="undefined"
+  />
+  <div
+    className="Card__info flex-center mb-1"
+  >
+    <h3
+      className="regular"
+    />
+    <h3
+      className="regular"
+    >
+      Male
+    </h3>
+  </div>
+  <h3
+    className="ellipsis mb-1"
+  >
+    Earth
+  </h3>
+  <div
+    className="text-right"
+  >
+    <a
+      className="Card__link-button"
+      href="/character/undefined"
+      onClick={[Function]}
+    >
+      About
+    </a>
+  </div>
+</div>
+`;

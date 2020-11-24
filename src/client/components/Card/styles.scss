@@ -1,0 +1,66 @@
+@import '../../index.scss';
+
+.Card {
+  &__container {
+    margin: 1rem;
+    background: white;
+    border: 1px solid lightgray;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    &--large {
+      max-width: 350px;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+
+  &__title {
+    padding-right: 0.5rem;
+  }
+
+  &__picture {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  &__info {
+    border-bottom: 2px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 0 1rem 0.5rem 1rem;
+  }
+
+  &__link-button {
+    @extend .link;
+
+    background-color: #2D3047;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 0.825rem;
+
+    &:hover {
+      color: white;
+      background-color: coral;
+      transform: scale(1.1);
+    }
+  }
+}
